@@ -4,278 +4,137 @@
   <meta charset="UTF-8" />
   <title>Moulika Manthripragada | DevSecOps & DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Moulika Manthripragada, DevSecOps & DevOps Engineer specializing in CI/CD, AWS, Kubernetes, Terraform, and observability." />
   <style>
+    :root {
+      --bg: #020617;
+      --bg-alt: #020617;
+      --card: #020617;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --text-main: #e5e7eb;
+      --text-sub: #9ca3af;
+      --border-subtle: #1f2937;
+      --pill-bg: #020617;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
-      background: #0f172a;
-      color: #e5e7eb;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827 0, #020617 45%, #020617 100%);
+      color: var(--text-main);
       line-height: 1.6;
     }
-    a { color: #38bdf8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header {
-      padding: 2.5rem 1.5rem 1.5rem;
-      max-width: 960px;
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .page {
+      max-width: 1040px;
       margin: 0 auto;
+      padding: 1.5rem 1.5rem 3rem;
+    }
+    header {
+      padding: 1.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
     }
     .name {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.75rem;
     }
     .subtitle {
       font-size: 1.05rem;
-      color: #a5b4fc;
-      margin-top: 0.35rem;
+      color: #cbd5f5;
+      max-width: 760px;
     }
     .contact {
       margin-top: 0.75rem;
-      font-size: 0.95rem;
-      color: #cbd5f5;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0.8rem;
     }
-    .contact span { margin-right: 0.75rem; }
+    .contact span::after {
+      content: "•";
+      margin-left: 0.6rem;
+      color: #4b5563;
+    }
+    .contact span:last-child::after {
+      content: "";
+      margin: 0;
+    }
     main {
-      max-width: 960px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 2rem;
+      padding-top: 1.5rem;
     }
     section {
-      margin-top: 2rem;
-      padding-top: 0.5rem;
-      border-top: 1px solid #1f2937;
+      margin-top: 2.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
     }
     h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
-      color: #e5e7eb;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-sub);
+      margin: 0 0 0.75rem;
     }
     h3 {
       font-size: 1.05rem;
-      margin: 0.5rem 0 0.25rem;
-      color: #e5e7eb;
+      margin: 0.35rem 0 0.25rem;
+    }
+    .section-intro {
+      font-size: 0.95rem;
+      color: var(--text-sub);
+      max-width: 760px;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin: 0.3rem 0 0.6rem;
+      font-size: 0.95rem;
+    }
+    .metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.8rem;
+      margin-top: 0.6rem;
+    }
+    .metric-card {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(15, 23, 42, 0.9));
+      border-radius: 0.75rem;
+      padding: 0.85rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+    .metric-value {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .metric-label {
+      font-size: 0.85rem;
+      color: #cbd5f5;
     }
     .pill {
       display: inline-block;
-      padding: 0.15rem 0.5rem;
-      border-radius: 999px;
-      background: #1f2937;
-      font-size: 0.8rem;
-      color: #e5e7eb;
-      margin-left: 0.35rem;
-    }
-    .meta {
-      font-size: 0.9rem;
-      color: #9ca3af;
-      margin-bottom: 0.25rem;
-    }
-    ul {
-      margin: 0.25rem 0 0.75rem 1.2rem;
-      padding: 0;
-      font-size: 0.95rem;
-    }
-    li { margin-bottom: 0.3rem; }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem 2rem;
-      font-size: 0.95rem;
-    }
-    .skill-cat-title {
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-      color: #e5e7eb;
-    }
-    footer {
-      max-width: 960px;
-      margin: 0 auto 1.5rem;
-      padding: 0 1.5rem;
-      font-size: 0.85rem;
-      color: #6b7280;
-    }
-    @media (max-width: 640px) {
-      header { padding: 1.75rem 1.25rem 1rem; }
-      main { padding: 0 1.25rem 2rem; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="name">Moulika Manthripragada</div>
-    <div class="subtitle">DevSecOps &amp; DevOps Engineer | CI/CD · AWS · Kubernetes · Terraform · Observability</div>
-    <div class="contact">
-      <span>Mequon / Cedarburg, WI, USA</span>
-      <span>|</span>
-      <span>Email: <a href="mailto:moulikamanthripragada@gmail.com">moulikamanthripragada@gmail.com</a></span>
-      <span>|</span>
-      <span>Phone: 262‑281‑5297</span>
-      <span>|</span>
-      <span><a href="https://www.linkedin.com/in/moulika-manthripragada" target="_blank" rel="noreferrer">LinkedIn</a></span>
-      <!-- Optional: add your GitHub when ready -->
-      <!-- <span>|</span>
-      <span><a href="https://github.com/your-github-username" target="_blank" rel="noreferrer">GitHub</a></span> -->
-    </div>
-  </header>
+      padding: 0.12rem 0.55rem;
+      border-radius
 
-  <main>
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Dynamic DevSecOps &amp; DevOps engineer with 4+ years of experience at Wipro Technologies supporting large-scale
-        e‑commerce systems for Williams Sonoma. Focused on automating CI/CD pipelines, building secure cloud
-        infrastructure on AWS, and improving reliability with Kubernetes and SRE practices. Proven track record of
-        boosting deployment efficiency by 30%, reducing incident response time by 40%, and increasing automation
-        coverage by 35%.
-      </p>
-      <p>
-        Currently completing an M.S. in Computer and Information Sciences at Concordia University Wisconsin (GPA 3.5)
-        and co‑leading the International Student Hub to help peers grow their technical skills and professional networks.
-      </p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Featured Projects</h2>
-
-      <h3>CI/CD Pipeline Security Hardening for E‑Commerce <span class="pill">DevSecOps</span></h3>
-      <div class="meta">Williams Sonoma (via Wipro) · Jenkins · Docker · Kubernetes (EKS) · Terraform · AWS · SonarQube · Trivy · OWASP ZAP · Prometheus · Grafana</div>
-      <ul>
-        <li>Designed and implemented a CI/CD pipeline for an e‑commerce application using Jenkins, Docker, Kubernetes, Terraform, and AWS.</li>
-        <li>Integrated build, test, SAST/DAST, and container scanning (SonarQube, Trivy, OWASP ZAP) into the pipeline.</li>
-        <li>Cut release time by 30% and enabled zero‑downtime deployments for critical features.</li>
-        <li>Improved incident response by 40% by integrating Prometheus and Grafana dashboards and alerts into SRE workflows.</li>
-      </ul>
-
-      <h3>AWS Infrastructure as Code for Microservices Platform <span class="pill">IaC</span></h3>
-      <div class="meta">Terraform · AWS (EKS, KMS, RDS, SQS, EC2, S3, IAM, VPC) · Ansible</div>
-      <ul>
-        <li>Developed production‑grade AWS infrastructure as code using Terraform modules for VPC, subnets, security groups, EKS, RDS, SQS, IAM, and KMS.</li>
-        <li>Standardized dev, staging, and production environments with automated provisioning and configuration management.</li>
-        <li>Reduced manual provisioning effort by 60% and improved consistency and scalability across all environments.</li>
-      </ul>
-
-      <h3>Kubernetes Orchestration &amp; Zero‑Downtime Deployments <span class="pill">SRE</span></h3>
-      <div class="meta">Kubernetes (EKS/AKS, Deployments, Services, Ingress, HPA) · Docker · Jenkins</div>
-      <ul>
-        <li>Deployed and managed Kubernetes clusters with advanced pod scaling, replica sets, and load balancing strategies.</li>
-        <li>Implemented blue‑green and canary deployments integrated with Jenkins pipelines for safe rollouts.</li>
-        <li>Improved service availability and fault tolerance while achieving zero downtime during critical releases.</li>
-      </ul>
-
-      <h3>Python Microservices &amp; Container Orchestration <span class="pill">FLM Project</span></h3>
-      <div class="meta">Python · Docker · Docker Compose · Microservices Architecture</div>
-      <ul>
-        <li>Built a library management application using a microservices architecture in Python.</li>
-        <li>Containerized 5+ microservices with Docker and orchestrated them using Docker Compose.</li>
-        <li>Increased scalability and modularity by 40% compared to a monolithic design and reduced environment setup time by 60%.</li>
-      </ul>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <h3>DevSecOps Engineer <span class="pill">Wipro Technologies</span></h3>
-      <div class="meta">March 2021 – October 2023 · Chennai, India</div>
-      <ul>
-        <li>Automated end‑to‑end CI/CD pipelines using Jenkins and Git, reducing release time by 30% with integrated build, test, and deployment workflows.</li>
-        <li>Developed and managed AWS infrastructure with Terraform, enabling consistent and automated provisioning for scalable solutions.</li>
-        <li>Containerized 10+ applications with Docker and deployed them in Kubernetes clusters to streamline microservices delivery.</li>
-        <li>Configured Prometheus and Grafana monitoring, reducing incident response time by 40% via targeted alerts and dashboards.</li>
-        <li>Standardized environment setups across dev, staging, and production using Docker images, eliminating “works on my machine” issues.</li>
-        <li>Mentored 10+ junior engineers on scripting and automation best practices, boosting automation coverage by 35% and speeding onboarding.</li>
-      </ul>
-
-      <h3>Test Engineer <span class="pill">Wipro Technologies</span></h3>
-      <div class="meta">February 2020 – March 2021 · Chennai, India</div>
-      <ul>
-        <li>Designed and executed 250+ manual test cases for checkout, payment, and order tracking modules for an e‑commerce platform.</li>
-        <li>Conducted functional, regression, smoke, exploratory, and UAT testing, delivering 100% coverage of critical workflows.</li>
-        <li>Logged and tracked 200+ defects in Jira with an average 48‑hour resolution time.</li>
-        <li>Supported 3 major UAT cycles that went live with zero critical defects, protecting business revenue at launch.</li>
-      </ul>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <div class="skill-cat-title">Cloud / IaC</div>
-          <div>AWS (EKS, KMS, RDS, SQS, EC2, S3, IAM, VPC), Azure, Terraform, Ansible</div>
-        </div>
-        <div>
-          <div class="skill-cat-title">DevSecOps</div>
-          <div>SonarQube (SAST), Trivy, OWASP ZAP (DAST), Secrets Management, IAM Policies, IaC Security</div>
-        </div>
-        <div>
-          <div class="skill-cat-title">CI/CD</div>
-          <div>Jenkins (Pipeline‑as‑Code, Groovy), AWS CodePipeline, Git, GitHub, Bitbucket, Maven</div>
-        </div>
-        <div>
-          <div class="skill-cat-title">Containerization</div>
-          <div>Kubernetes (EKS/AKS, Deployments, Services, Ingress), Docker, Docker Compose</div>
-        </div>
-        <div>
-          <div class="skill-cat-title">Monitoring / Logging</div>
-          <div>Prometheus, Grafana, Datadog, AWS CloudWatch, Service‑Level Objectives (SLOs)</div>
-        </div>
-        <div>
-          <div class="skill-cat-title">Scripting &amp; Databases</div>
-          <div>Python, Bash, AWS RDS (MySQL, PostgreSQL)</div>
-        </div>
-        <div>
-          <div class="skill-cat-title">Methodologies</div>
-          <div>Agile/Scrum, SDLC, Waterfall</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION & CERTS -->
-    <section id="education">
-      <h2>Education &amp; Certifications</h2>
-
-      <h3>Master of Science, Computer and Information Sciences</h3>
-      <div class="meta">Concordia University Wisconsin · Mequon, WI · 2025 · GPA: 3.5</div>
-      <ul>
-        <li>Co‑founder, International Student Hub – led initiatives to connect students and grow technical skills among diverse backgrounds.</li>
-      </ul>
-
-      <h3>Bachelor of Technology, Electronics and Communication Engineering</h3>
-      <div class="meta">Aurora's Technological and Research Institute · Hyderabad · 2020 · CGPA: 7.8</div>
-      <ul>
-        <li>Awarded a full 4‑year scholarship for academic performance.</li>
-      </ul>
-
-      <h3>Certifications</h3>
-      <ul>
-        <li>Cloud DevOps – Intel (2025)</li>
-        <li>DevSecOps – FLM (2025)</li>
-      </ul>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        The best way to reach out is via email or LinkedIn:
-      </p>
-      <ul>
-        <li>Email: <a href="mailto:moulikamanthripragada@gmail.com">moulikamanthripragada@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/moulika-manthripragada" target="_blank" rel="noreferrer">moulika-manthripragada</a></li>
-        <!-- Add GitHub when ready -->
-        <!-- <li>GitHub: <a href="https://github.com/your-github-username" target="_blank" rel="noreferrer">your-github-username</a></li> -->
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    © <span id="year"></span> Moulika Manthripragada · DevSecOps &amp; DevOps Engineer
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
