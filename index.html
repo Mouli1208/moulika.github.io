@@ -1,140 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Moulika Manthripragada | DevSecOps & DevOps Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Moulika Manthripragada, DevSecOps & DevOps Engineer specializing in CI/CD, AWS, Kubernetes, Terraform, and observability." />
-  <style>
-    :root {
-      --bg: #020617;
-      --bg-alt: #020617;
-      --card: #020617;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.12);
-      --text-main: #e5e7eb;
-      --text-sub: #9ca3af;
-      --border-subtle: #1f2937;
-      --pill-bg: #020617;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #111827 0, #020617 45%, #020617 100%);
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .page {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 1.5rem 1.5rem 3rem;
-    }
-    header {
-      padding: 1.5rem 0 2.5rem;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-    .topline {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .name {
-      font-size: 2.1rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-    }
-    .tagline {
-      font-size: 0.95rem;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 0.75rem;
-    }
-    .subtitle {
-      font-size: 1.05rem;
-      color: #cbd5f5;
-      max-width: 760px;
-    }
-    .contact {
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-      color: var(--text-sub);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem 0.8rem;
-    }
-    .contact span::after {
-      content: "•";
-      margin-left: 0.6rem;
-      color: #4b5563;
-    }
-    .contact span:last-child::after {
-      content: "";
-      margin: 0;
-    }
-    main {
-      padding-top: 1.5rem;
-    }
-    section {
-      margin-top: 2.25rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-subtle);
-    }
-    h2 {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--text-sub);
-      margin: 0 0 0.75rem;
-    }
-    h3 {
-      font-size: 1.05rem;
-      margin: 0.35rem 0 0.25rem;
-    }
-    .section-intro {
-      font-size: 0.95rem;
-      color: var(--text-sub);
-      max-width: 760px;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin: 0.3rem 0 0.6rem;
-      font-size: 0.95rem;
-    }
-    .metrics-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.8rem;
-      margin-top: 0.6rem;
-    }
-    .metric-card {
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(15, 23, 42, 0.9));
-      border-radius: 0.75rem;
-      padding: 0.85rem;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-    }
-    .metric-value {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-    .metric-label {
-      font-size: 0.85rem;
-      color: #cbd5f5;
-    }
-    .pill {
-      display: inline-block;
-      padding: 0.12rem 0.55rem;
-      border-radius
+  <title>Moulika | DevOps & DevSecOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="DevOps & DevSecOps Engineer building secure CI/CD pipelines, Kubernetes platforms, and AWS infrastructure." />
+  <link rel="stylesheet" href="https://codewithsadee.github.io/vcard-personal-portfolio/assets/css/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
 
+<body>
+
+  <!-- #MAIN -->
+
+  <main>
+
+    <!-- #SIDEBAR -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!-- Replace with your own photo in /assets/images/avatar.png or a URL -->
+          <img src="assets/images/avatar.png" alt="Moulika Manthripragada" width="80" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Moulika Manthripragada">MOULIKA M.</h1>
+
+          <p class="title">DevOps & DevSecOps Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:YOUR_EMAIL@example.com" class="contact-link">YOUR_EMAIL@example.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+1XXXXXXXXXX" class="contact-link">+1 (XXX) XXX‑XXXX</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Thiensville / Mequon, WI, USA</address>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" class="contact-link" target="_blank">
+                linkedin.com/in/YOUR-LINKEDIN
+              </a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <a href="https://github.com/YOUR-GITHUB" class="contact-link" target="_blank">
+                github.com/YOUR-GITHUB
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/YOUR-GITHUB" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!-- #CONTENT -->
+
+    <div class="main-content">
+
+      <!-- #NAVBAR -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- #ABOUT -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            DevOps & DevSecOps Engineer specializing in secure CI/CD pipelines, Kubernetes platforms,
+            and AWS infrastructure for reliable, scalable delivery.
+          </p>
+          <p>
+            Enjoys turning complex systems into simple, automated workflows: from IaC with Terraform
+            and containerization with Docker to observability with Prometheus/Grafana and security
+            gates in the pipeline.
+          </p>
+        </section>
+
+        <!-- WHAT I'M DOING -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="git-branch-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CI/CD & Automation</h4>
+                <p class="service-item-text">
+                  Designing and maintaining CI/CD pipelines (Jenkins, GitHub Actions, Azure DevOps)
+                  that deliver faster and safer releases.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Infrastructure</h4>
+                <p class="service-item-text">
+                  Building AWS infrastructure with Terraform and Kubernetes for highly available,
+                  observable, and cost-aware platforms.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevSecOps</h4>
+                <p class="service-item-text">
+                  Integrating security tools, scanning, and policies into the delivery pipeline to
+                  catch issues early and protect production.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="pulse-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Observability</h4>
+                <p class="service-item-text">
+                  Implementing logging, metrics, and alerting to reduce incident noise and speed up
+                  root-cause analysis.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- #RESUME -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">DevOps / DevSecOps Engineer – COMPANY</h4>
+              <span>2022 – Present</span>
+              <p class="timeline-text">
+                Led CI/CD pipelines, Kubernetes deployments, and AWS infrastructure, reducing release
+                time and improving reliability. Add your best 2–3 metrics here.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Previous Role – COMPANY</h4>
+              <span>YEAR – YEAR</span>
+              <p class="timeline-text">
+                Brief description of your earlier role (e.g., QA Automation / SDET) and how it
+                supports your DevOps journey.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education & Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">YOUR DEGREE – UNIVERSITY</h4>
+              <span>YEAR – YEAR</span>
+              <p class="timeline-text">
+                Earned a full four‑year merit scholarship and recognized as Best Student of the Year
+                for academic excellence and overall contribution.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Cloud DevOps – Intel</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Hands-on cloud DevOps training focused on CI/CD, containerization, and automation.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">DevSecOps – FLM</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Practical DevSecOps practices: integrating security tools and checks into delivery
+                pipelines.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">DevOps & Automation</h5>
+                <data value="90">Advanced</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AWS & Cloud</h5>
+                <data value="85">Advanced</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Kubernetes & Containers</h5>
+                <data value="85">Advanced</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Terraform & IaC</h5>
+                <data value="80">Advanced</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- #PROJECTS -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>CI/CD</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Kubernetes</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>DevSecOps</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>CI/CD</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Kubernetes</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>DevSecOps</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="ci/cd">
+              <a href="https://github.com/YOUR-GITHUB/ci-cd-kubernetes-sample" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-1.png"
+                       alt="CI/CD to Kubernetes" loading="lazy" />
+                </figure>
+                <h3 class="project-title">End-to-End CI/CD to EKS</h3>
+                <p class="project-category">
+                  Jenkins / GitHub Actions pipeline deploying Dockerized app to AWS EKS with
+                  automated tests and blue-green strategy.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="kubernetes">
+              <a href="https://github.com/YOUR-GITHUB/k8s-hpa-observability" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-2.png"
+                       alt="Kubernetes HPA" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Kubernetes HPA & Observability</h3>
+                <p class="project-category">
+                  Microservice with HPA, ConfigMaps/Secrets, Ingress, and Prometheus/Grafana
+                  dashboards for end-to-end monitoring.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="devsecops">
+              <a href="https://github.com/YOUR-GITHUB/devsecops-pipeline" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/project-3.png"
+                       alt="DevSecOps pipeline" loading="lazy" />
+                </figure>
+                <h3 class="project-title">DevSecOps Pipeline</h3>
+                <p class="project-category">
+                  CI/CD pipeline integrating SAST, dependency scanning, and container image scanning
+                  before deploying to staging.
+                </p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- #CONTACT -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox">
+          <!-- You can embed a map here or leave blank -->
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Let’s work together</h3>
+
+          <p>
+            Best way to reach out: email or LinkedIn. Use this form if you host with a backend; on
+            GitHub Pages, you can replace it with a simple mailto link.
+          </p>
+
+          <form action="mailto:YOUR_EMAIL@example.com" method="post" enctype="text/plain" class="form">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Your name" required />
+              <input type="email" name="email" class="form-input" placeholder="Your email" required />
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your message" required></textarea>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+              <span>Send message</span>
+            </button>
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- IONICONS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- CORE JS from original vCard (optional: you can pull it locally instead) -->
+  <script src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/js/script.js"></script>
+
+</body>
+
+</html>
